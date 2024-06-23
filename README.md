@@ -6,7 +6,8 @@ Ejemplo de microservice con NestJS
 
 1. Clonar el repositorio
 2. Crear archivo **.env** basado en el [**.env.template**](./.env.template)
-3. Ejecutar comando `docker compose up --build`
+3. Reconstruir los sub-módulos con el comando: `git submodule update --init --recursive`
+4. Ejecutar comando: `docker compose up --build`
 
 ### Pasos para crear los Git Submodules
 
