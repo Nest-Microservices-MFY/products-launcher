@@ -1,6 +1,12 @@
-# Microservices con NestJS
+<h1 align="center"> Microservices con NestJS </h1>
 
 Ejemplo de microservice con NestJS
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=nest,typescript,docker,postgres,sqlite,mongo" />
+  </a>
+</p>
 
 ## DEV
 
