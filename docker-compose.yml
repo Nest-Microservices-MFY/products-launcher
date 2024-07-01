@@ -32,6 +32,7 @@ services:
     environment:
       - PORT=${AUTH_MS_PORT}
       - NATS_SERVERS=${NATS_SERVERS}
+      - DATABASE_URL=${AUTH_DATABASE_URL}
 
   # ======================
   # Products Microservice
