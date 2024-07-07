@@ -51,3 +51,11 @@ git submodule update --remote
 Si se trabaja en el repositorio que tiene los sub-módulos, **primero actualizar y hacer push** en el sub-módulo y **después** en el repositorio principal.
 
 Si se hace al revés, se perderán las referencias de los sub-módulos en el repositorio principal y tendremos que resolver conflictos.
+
+## Sub módulos
+
+- [client-gateway](https://github.com/Nest-Microservices-MFY/client-gateway.git)
+- [orders-ms](https://github.com/Nest-Microservices-MFY/orders-microservice.git)
+- [products-ms](https://github.com/Nest-Microservices-MFY/products-microservice.git)
+- [payments-ms](https://github.com/Nest-Microservices-MFY/payments-microservice.git)
+- [auth-ms](https://github.com/Nest-Microservices-MFY/auth-microservice.git)
