@@ -59,3 +59,13 @@ Si se hace al revés, se perderán las referencias de los sub-módulos en el rep
 - [products-ms](https://github.com/Nest-Microservices-MFY/products-microservice.git)
 - [payments-ms](https://github.com/Nest-Microservices-MFY/payments-microservice.git)
 - [auth-ms](https://github.com/Nest-Microservices-MFY/auth-microservice.git)
+
+## PROD
+
+1. Clonar repositorio
+2. Crear archivo **.env** basado en el [**.env.template**](./.env.template)
+3. Ejecutar comando:
+
+```bash
+docker compose -f docker-compose.prod.yml build
+```
