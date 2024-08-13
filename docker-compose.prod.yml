@@ -12,7 +12,7 @@ services:
     build:
       context: ./client-gateway
       dockerfile: dockerfile.prod
-    image: client-gateway-prod
+    image: southamerica-west1-docker.pkg.dev/tidy-cortex-432423-m7/registro-imagen/client-gateway-prod
     ports:
       - ${CLIENT_GATEWAY_PORT}:${CLIENT_GATEWAY_PORT}
     environment:
@@ -26,7 +26,7 @@ services:
     build:
       context: ./auth-ms
       dockerfile: dockerfile.prod
-    image: auth-ms-prod
+    image: southamerica-west1-docker.pkg.dev/tidy-cortex-432423-m7/registro-imagen/auth-ms-prod
     environment:
       - PORT=${AUTH_MS_PORT}
       - NATS_SERVERS=${NATS_SERVERS}
@@ -40,7 +40,7 @@ services:
     build:
       context: ./products-ms
       dockerfile: dockerfile.prod
-    image: products-ms-prod
+    image: southamerica-west1-docker.pkg.dev/tidy-cortex-432423-m7/registro-imagen/products-ms-prod
     environment:
       - PORT=${PRODUCT_MS_PORT}
       - NATS_SERVERS=${NATS_SERVERS}
@@ -54,7 +54,7 @@ services:
       dockerfile: dockerfile.prod
       args:
         - ORDERS_DATABASE_URL=${ORDERS_DATABASE_URL}
-    image: orders-ms-prod
+    image: southamerica-west1-docker.pkg.dev/tidy-cortex-432423-m7/registro-imagen/orders-ms-prod
     environment:
       - PORT=${ORDER_MS_PORT}
       - NATS_SERVERS=${NATS_SERVERS}
@@ -67,7 +67,7 @@ services:
     build:
       context: ./payments-ms
       dockerfile: dockerfile.prod
-    image: payments-ms-prod
+    image: southamerica-west1-docker.pkg.dev/tidy-cortex-432423-m7/registro-imagen/payments-ms-prod
     ports:
       - ${PAYMENT_MS_PORT}:${PAYMENT_MS_PORT}
     environment:
